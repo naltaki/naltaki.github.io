@@ -37,75 +37,75 @@
         <h1 class="page-title">Docs</h1>
 
         <div class="markdown-body">
+          <p>The project is not finished yet. Stay tune.</p>
           <h3 id="what-and-why">Setup</h3>
-
           <ul>
             <li>Clone the project.</li>
 
             <li>Create a Parse.com app.</li>
 
             <li>Execute this command to create a Parse class "Events" with your own credentials.</li>
-
-            <code>
-              curl -X POST \
-              -H "X-Parse-Application-Id: 123456" \
-              -H "X-Parse-Master-Key: a1b2c3d4e5f6" \
-              -H "Content-Type: application/json" \
-              -d ' 
-                {
-                  "className": "Events",
-                  "fields": {
-                    "ACL":{  
-                      "type":"ACL"
-                    },
-                    "createdAt":{  
-                      "type":"Date"
-                    },
-                    "description":{  
-                      "type":"String"
-                    },
-                    "guests":{  
-                      "type":"Array"
-                    },
-                    "objectId":{  
-                      "type":"String"
-                    },
-                    "rsvpLimit":{  
-                      "type":"Number"
-                    },
-                    "startAt":{  
-                      "type":"Date"
-                    },
-                    "title":{  
-                      "type":"String"
-                    },
-                    "updatedAt":{  
-                      "type":"Date"
-                    },
-                    "venueAddress":{  
-                      "type":"String"
-                    },
-                    "venueGeoLocation":{  
-                      "type":"GeoPoint"
-                    },
-                    "venueLink":{  
-                      "type":"String"
-                    },
-                    "venueName":{  
-                      "type":"String"
-                    }
-                  }
-                }' \
-              https://api.parse.com/1/schemas/Events
-            </code>
-
+            <pre>
+<code>
+  curl -X POST \
+  -H "X-Parse-Application-Id: 123456" \
+  -H "X-Parse-Master-Key: a1b2c3d4e5f6" \
+  -H "Content-Type: application/json" \
+  -d ' 
+    {
+      "className": "Events",
+      "fields": {
+        "ACL":{  
+          "type":"ACL"
+        },
+        "createdAt":{  
+          "type":"Date"
+        },
+        "description":{  
+          "type":"String"
+        },
+        "guests":{  
+          "type":"Array"
+        },
+        "objectId":{  
+          "type":"String"
+        },
+        "rsvpLimit":{  
+          "type":"Number"
+        },
+        "startAt":{  
+          "type":"Date"
+        },
+        "title":{  
+          "type":"String"
+        },
+        "updatedAt":{  
+          "type":"Date"
+        },
+        "venueAddress":{  
+          "type":"String"
+        },
+        "venueGeoLocation":{  
+          "type":"GeoPoint"
+        },
+        "venueLink":{  
+          "type":"String"
+        },
+        "venueName":{  
+          "type":"String"
+        }
+      }
+    }' \
+  https://api.parse.com/1/schemas/Events
+</code>
+            </pre>
             <li>Change default configuration values in index.html.</li>
 
-            <li>Push the code to GitHub Pages.</li>
+            <li>Push the code to <code>gh-pages</code> branch.</li>
 
-            <li>GitHub pages is hosting the app.</li>
+            <li>Go to <a href="https://www.parse.com/apps" target="_blank">Parse dashboard</a> to add events.</li>
 
-            <li>Parse.com is managing the back end.</li>
+            <li>Enjoy your user group website :)</li>
           </ul>
         </div>
       </div>
